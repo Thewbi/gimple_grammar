@@ -1,0 +1,21 @@
+void __static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  if (__initialize_p == 1) goto <D.49076>; else goto <D.49077>;
+  <D.49076>:
+  if (__priority == 65535) goto <D.49078>; else goto <D.49079>;
+  <D.49078>:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxxabiv1::__cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+  goto <D.49080>;
+  <D.49079>:
+  <D.49080>:
+  goto <D.49081>;
+  <D.49077>:
+  <D.49081>:
+}
+
+
+void _GLOBAL__sub_I_example.cpp ()
+{
+  __static_initialization_and_destruction_0 (1, 65535);
+}
